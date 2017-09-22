@@ -35,7 +35,7 @@ public class Empleado
                 +"DPI: "+DPI+"\n"
                 +"Nit: "+ nit+"\n"
                 +"Salario: "+salario+"\n"
-                +"Bumero de Guardias: "+NumG;
+                +"Numero de Guardias: "+NumG;
         
         
         

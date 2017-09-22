@@ -17,6 +17,33 @@ public class Medico extends Empleado{
         setNumG(numG);
         
     }
+
+    @Override
+    public String getRango() {
+        return super.getRango(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double getSalario() {
+        return super.getSalario(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getInformacion() {
+        String cadena = "";
+        String a;
+        if(especialista == true){
+            a = "Si";
+        }else{
+            a = "No";
+        }
+        
+        cadena = super.getInformacion() + "\nNumero de colegiado: " + colegiado
+                + "\nEspecialista: " + a;
+        
+        return cadena;
+    }
+    
     
     
 }
