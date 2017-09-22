@@ -9,7 +9,7 @@ public class Medico extends Empleado{
     private int numG;
     private boolean especialista;
     
-    public Medico(String Nit, int dpi, String Nom, double Salario, int ID, int NUMG, int Colegiado, boolean Especialista) {
+    public Medico(String Nit, String dpi, String Nom, double Salario, int ID, int NUMG, int Colegiado, boolean Especialista) {
         super(Nit, dpi, Nom, Salario, ID, NUMG);
         
         colegiado = Colegiado;
@@ -38,7 +38,8 @@ public class Medico extends Empleado{
             a = "No";
         }
         
-        cadena = super.getInformacion() + "\nNumero de colegiado: " + colegiado
+        cadena = "MEDICO:\n" + super.getInformacion() 
+                + "\nNumero de colegiado: " + colegiado
                 + "\nEspecialista: " + a;
         
         return cadena;

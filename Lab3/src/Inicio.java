@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+import java.util.ArrayList;
 
 /**
  *
@@ -13,8 +10,13 @@ public class Inicio extends javax.swing.JFrame {
     /**
      * Creates new form Inicio
      */
+    
+    ArrayList<Empleado> empleado;
+    Empleado[][] ArEmpleado;
     public Inicio() {
         initComponents();
+        empleado = new ArrayList<>();
+        ArEmpleado = new Empleado[1][1];
     }
 
     /**
@@ -29,6 +31,11 @@ public class Inicio extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jButton1.setText("jButton1");
 
@@ -51,6 +58,18 @@ public class Inicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        
+        Empleado em = new Empleado();
+        empleado = em.crearEmpleados(empleado);
+        
+        String cadena = "";
+        for(Empleado a: empleado){
+            cadena += a.getInformacion() + "\n----------------------------\n";
+        }
+        System.out.println(cadena);
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments

@@ -10,14 +10,15 @@ public class Enfermera extends Empleado
     private int AExp;
     private int NumG;
     
-    public Enfermera(String Nit, int dpi, String Nom, double Salario, int ID, int NUMG, boolean intensiva, int aexp, int numg) 
+    public Enfermera(String Nit, String dpi, String Nom, double Salario, int ID, int NUMG, boolean intensiva, int aexp) 
     {
         super(Nit, dpi, Nom, Salario, ID, NUMG);
         Intensiva=intensiva;
         AExp=aexp;
-        NumG=numg;
+        NumG=NUMG;
     }
     
+    @Override
     public String getInformacion()
     {
         String x="";
@@ -32,7 +33,7 @@ public class Enfermera extends Empleado
         }
         
         
-        concatenar=super.getInformacion()+"\n"
+        concatenar= "ENFERMERA:\n" + super.getInformacion()+"\n"
                 +"Intensivista: "+x+"\n"
                 + "Anos de experiencia: "+AExp;            
                 
