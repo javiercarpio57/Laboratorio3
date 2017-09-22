@@ -58,6 +58,7 @@ public class Empleado
     public void setNumG(int numG){
         NumG += numG;;
     }
+    
     // metodos propios de esta clase .....calculos
     
     public int get_Max_GuardiasE()
