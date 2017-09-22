@@ -14,6 +14,9 @@ public class Medico extends Empleado{
         
         colegiado = Colegiado;
         especialista = Especialista;
+        setNumG(numG);
+        
     }
+    
     
 }
