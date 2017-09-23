@@ -125,6 +125,9 @@ public class Empleado
        int columna=0, fila=0;
        switch (Dia) 
        {
+           case 0: respuesta="No hay guardia este día";
+                     break;
+           
             case 1: columna=0; fila=0;
                      break;
             
@@ -228,6 +231,10 @@ public class Empleado
        
         for (Empleado i: empleado) 
         {
+            if (Dia==0) 
+            {
+             break;   
+            }
             if (i instanceof Medico) 
             {
                 if (i.getId()==medico) 

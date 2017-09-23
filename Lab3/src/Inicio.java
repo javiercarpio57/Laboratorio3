@@ -23,6 +23,9 @@ public class Inicio extends javax.swing.JFrame {
     Posicion[][] Noviembre =new Posicion[5][6];
     Posicion[][] Diciembre =new Posicion[5][7];
     
+    Empleado nul=new Empleado();
+    
+    String control="";
     
     ArrayList<Empleado> empleado;
     public Inicio() {
@@ -211,18 +214,48 @@ public class Inicio extends javax.swing.JFrame {
         jLabel14.setText("Domingo");
 
         jButton20.setText("1");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
 
         jButton21.setText("2");
         jButton21.setMaximumSize(new java.awt.Dimension(49, 23));
         jButton21.setMinimumSize(new java.awt.Dimension(49, 23));
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
 
         jButton22.setText("3");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
 
         jButton23.setText("4");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
 
         jButton24.setText("5");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
 
         jButton25.setText("6");
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
 
         jButton26.setText("7");
         jButton26.addActionListener(new java.awt.event.ActionListener() {
@@ -232,64 +265,189 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jButton27.setText("8");
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
 
         jButton28.setText("9");
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
 
         jButton29.setText("10");
         jButton29.setMaximumSize(new java.awt.Dimension(49, 23));
         jButton29.setMinimumSize(new java.awt.Dimension(49, 23));
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
 
         jButton30.setText("11");
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
 
         jButton31.setText("12");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
 
         jButton32.setText("13");
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
 
         jButton33.setText("14");
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
 
         jButton34.setText("15");
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
 
         jButton35.setText("22");
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
 
         jButton36.setText("16");
         jButton36.setMaximumSize(new java.awt.Dimension(49, 23));
         jButton36.setMinimumSize(new java.awt.Dimension(49, 23));
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
 
         jButton37.setText("23");
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
 
         jButton38.setText("17");
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
 
         jButton39.setText("24");
         jButton39.setMaximumSize(new java.awt.Dimension(49, 23));
         jButton39.setMinimumSize(new java.awt.Dimension(49, 23));
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
 
         jButton40.setText("18");
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
 
         jButton41.setText("25");
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
 
         jButton42.setText("19");
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
 
         jButton43.setText("26");
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
 
         jButton44.setText("20");
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
 
         jButton45.setText("27");
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
 
         jButton46.setText("21");
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
 
         jButton47.setText("28");
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
 
         jButton48.setText("29");
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
 
         jButton49.setText("30");
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
 
         jButton50.setText("31");
         jButton50.setMaximumSize(new java.awt.Dimension(49, 23));
         jButton50.setMinimumSize(new java.awt.Dimension(49, 23));
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
 
         jButton51.setText("31");
         jButton51.setMaximumSize(new java.awt.Dimension(49, 23));
         jButton51.setMinimumSize(new java.awt.Dimension(49, 23));
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
 
         jButton52.setText("31");
         jButton52.setMaximumSize(new java.awt.Dimension(49, 23));
@@ -414,7 +572,7 @@ public class Inicio extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 49, Short.MAX_VALUE))
+                            .addComponent(jButton32, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -481,7 +639,7 @@ public class Inicio extends javax.swing.JFrame {
                         .addComponent(jButton59, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                         .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -725,16 +883,16 @@ public class Inicio extends javax.swing.JFrame {
         jButton49.setText(" ");
         jButton50.setText(" ");
         jButton51.setText(" ");
-        jButton52.setText("  ");
-        jButton53.setText("  ");
-        jButton54.setText("  ");
-        jButton55.setText("  ");
-        jButton56.setText("  ");
-        jButton57.setText("  ");
-        jButton58.setText("  ");
-        jButton59.setText("  ");
-        jButton60.setText("  ");
-        jButton61.setText("  ");
+        jButton52.setText(" ");
+        jButton53.setText(" ");
+        jButton54.setText(" ");
+        jButton55.setText(" ");
+        jButton56.setText(" ");
+        jButton57.setText(" ");
+        jButton58.setText(" ");
+        jButton59.setText(" ");
+        jButton60.setText(" ");
+        jButton61.setText(" ");
         
         
         
@@ -786,6 +944,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("  ");
         jButton55.setText("  ");
         jButton56.setText("  ");
+        
+        control="Junio";
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -831,19 +991,179 @@ public class Inicio extends javax.swing.JFrame {
         jButton53.setText("30");
         jButton54.setText(" ");
         
+        control="Septiembre";
         
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton52.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton52.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton53.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton53.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton54.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton54.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -891,34 +1211,407 @@ public class Inicio extends javax.swing.JFrame {
         jButton55.setText("30");
         jButton56.setText("31");
         
+        control="Octubre";
+        
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton55.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton55.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton55ActionPerformed
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton56.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton56.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton56ActionPerformed
 
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton57.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton57.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton57ActionPerformed
 
     private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton58.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton58.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton58ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton59.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton59.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton59ActionPerformed
 
     private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton60.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton60.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton60ActionPerformed
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
         // TODO add your handling code here:
+        
+        int dia;
+        if (jButton61.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton61.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
     }//GEN-LAST:event_jButton61ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -960,6 +1653,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("  ");
         jButton55.setText("  ");
         jButton56.setText("  ");
+        
+        control="Noviembre";
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
@@ -1001,6 +1696,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("31");
         jButton55.setText("  ");
         jButton56.setText("  ");
+        
+        control="Diciembre";
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -1042,6 +1739,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("29");
         jButton55.setText("30");
         jButton56.setText("31");
+        
+        control="Enero";
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -1083,6 +1782,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("  ");
         jButton55.setText("  ");
         jButton56.setText("  ");
+        
+        control="Febrero";
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -1125,6 +1826,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("  ");
         jButton55.setText("  ");
         jButton56.setText("  ");
+        
+        control="Marzo";
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -1167,6 +1870,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("30");
         jButton55.setText("  ");
         jButton56.setText("  ");
+        
+        control="Abril";
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -1209,6 +1914,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("  ");
         jButton55.setText("  ");
         jButton56.setText("  ");
+        
+        control="Mayo";
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -1251,6 +1958,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("30");
         jButton55.setText("31");
         jButton56.setText("  ");
+        
+        control="Julio";
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -1293,16 +2002,1840 @@ public class Inicio extends javax.swing.JFrame {
         jButton54.setText("  ");
         jButton55.setText("  ");
         jButton56.setText("  ");
+        
+        control="Agosto";
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
         // TODO add your handling code here:
-        Empleado nul=new Empleado();
-        int dia=Integer.parseInt(jButton26.getText());
-        jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+        int dia;
+        if (jButton26.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton26.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+            
+        
+        
        
         
     }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        // TODO add your handling code here:
+        int dia;
+        if (jButton20.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton20.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton21.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton21.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton22.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton22.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton23.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton23.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton24.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton24.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton25.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton25.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton27.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton27.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton28.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton28.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton29.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton29.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton30.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton30.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton31.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton31.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton32.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton32.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        // TODO add your handling code here:
+        int dia;
+        if (jButton33.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton33.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton34.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton34.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton36.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton36.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton38.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton38.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton40.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton40.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton42.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton42.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton44.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton44.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton46.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton46.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton35.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton35.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton37.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton37.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton39.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton39.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton41.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton41.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton43.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton43.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton45.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton45.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton47.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton47.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton48.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton48.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton49.getText().equals(" ")) {
+            dia = 0;
+
+        } else {
+            dia = Integer.parseInt(jButton49.getText());
+        }
+        switch (control) {
+            case "Enero":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Enero, empleado));
+                break;
+
+            case "Febrero":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Febrero, empleado));
+                break;
+
+            case "Marzo":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Marzo, empleado));
+                break;
+
+            case "Abril":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Abril, empleado));
+                break;
+
+            case "Mayo":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Mayo, empleado));
+                break;
+
+            case "Junio":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Junio, empleado));
+                break;
+
+            case "Julio":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Julio, empleado));
+                break;
+
+            case "Agosto":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Agosto, empleado));
+                break;
+
+            case "Septiembre":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Septiembre, empleado));
+                break;
+
+            case "Octubre":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Octubre, empleado));
+                break;
+
+            case "Noviembre":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Noviembre, empleado));
+                break;
+
+            case "Diciembre":
+                jTextArea1.setText(nul.TurnoDeDia(dia, Diciembre, empleado));
+                break;
+
+        }
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton50.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton50.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        // TODO add your handling code here:
+        
+        int dia;
+        if (jButton51.getText().equals(" ")) 
+        {
+             dia=0;
+            
+        }
+        else
+        {
+         dia=Integer.parseInt(jButton51.getText());
+        }
+        switch (control) 
+       {
+            case "Enero":jTextArea1.setText(nul.TurnoDeDia(dia,Enero,empleado));
+                     break;
+                     
+           case "Febrero":jTextArea1.setText(nul.TurnoDeDia(dia,Febrero,empleado));
+                     break;          
+                     
+            case "Marzo":jTextArea1.setText(nul.TurnoDeDia(dia,Marzo,empleado));
+                     break;            
+                     
+            case "Abril":jTextArea1.setText(nul.TurnoDeDia(dia,Abril,empleado));
+                     break;  
+                     
+            case "Mayo":jTextArea1.setText(nul.TurnoDeDia(dia,Mayo,empleado));
+                     break;         
+                     
+            case "Junio":jTextArea1.setText(nul.TurnoDeDia(dia,Junio,empleado));
+                     break;    
+                     
+            case "Julio":jTextArea1.setText(nul.TurnoDeDia(dia,Julio,empleado));
+                     break;           
+                     
+            case "Agosto":jTextArea1.setText(nul.TurnoDeDia(dia,Agosto,empleado));
+                     break;           
+                 
+            case "Septiembre":jTextArea1.setText(nul.TurnoDeDia(dia,Septiembre,empleado));
+                     break;  
+                     
+             case "Octubre":jTextArea1.setText(nul.TurnoDeDia(dia,Octubre,empleado));
+                     break;          
+                     
+            case "Noviembre":jTextArea1.setText(nul.TurnoDeDia(dia,Noviembre,empleado));
+                     break;         
+                     
+            case "Diciembre":jTextArea1.setText(nul.TurnoDeDia(dia,Diciembre,empleado));
+                     break;          
+                     
+                     
+                     
+            
+        }
+    }//GEN-LAST:event_jButton51ActionPerformed
 
     /**
      * @param args the command line arguments
