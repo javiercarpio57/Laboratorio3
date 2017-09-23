@@ -97,6 +97,11 @@ public class Empleado
         NumG += numG;;
     }
     
+    public int getGuaridia()
+    {
+        return NumG;
+    }
+    
     // metodos propios de esta clase .....calculos
     
     public int get_Max_GuardiasE()
@@ -114,7 +119,142 @@ public class Empleado
         
     }
     
+    public String TurnoDeDia(int Dia,Posicion[][] pos,ArrayList<Empleado> empleado)
+    {
+       String respuesta="";
+       int columna=0, fila=0;
+       switch (Dia) 
+       {
+            case 1: columna=0; fila=0;
+                     break;
+            
+            case 2: columna=0; fila=1;
+                     break;
+                     
+            case 3: columna=0; fila=2;
+                     break;
+                     
+            case 4: columna=0; fila=3;
+                     break;         
+                     
+            case 5: columna=0; fila=4;
+                     break;  
+                     
+            case 6: columna=0; fila=5;
+                     break;         
+                     
+            case 7: columna=0; fila=6;
+                     break;         
+                     
+            case 8: columna=1; fila=0;
+                     break;     
+                     
+            case 9: columna=1; fila=1;
+                     break;          
+                     
+            case 10: columna=1; fila=2;
+                     break;         
+                     
+            case 11: columna=1; fila=3;
+                     break;          
+                     
+            case 12: columna=1; fila=4;
+                     break;          
+                     
+            case 13: columna=1; fila=5;
+                     break;      
+                     
+            case 14: columna=1; fila=6;
+                     break;          
+                     
+            case 15: columna=2; fila=0;
+                     break;          
+                     
+            case 16: columna=2; fila=1;
+                     break;     
+                     
+            case 17: columna=2; fila=2;
+                     break;          
+                     
+            case 18: columna=2; fila=3;
+                     break;          
+                     
+            case 19: columna=2; fila=4;
+                     break;          
+                     
+            case 20: columna=2; fila=5;
+                     break;          
+                     
+            case 21: columna=2; fila=6;
+                     break;          
+                     
+            case 22: columna=3; fila=0;
+                     break;       
+                     
+            case 23: columna=3; fila=1;
+                     break;         
+                     
+            case 24: columna=3; fila=2;
+                     break;         
+                     
+            case 25: columna=3; fila=3;
+                     break;         
+                     
+            case 26: columna=3; fila=4;
+                     break;         
+                     
+            case 27: columna=3; fila=5;
+                     break;    
+                     
+            case 28: columna=3; fila=6;
+                     break;         
+                     
+            case 29: columna=4; fila=0;
+                     break;      
+                     
+            case 30: columna=4; fila=1;
+                     break;
+                     
+            case 31: columna=4; fila=2;
+                     break;         
+                     
+       } 
+       
+       Posicion p=new Posicion(0,0);
+       p= pos[columna][fila];
+       
+       int medico=p.getDoc();
+       int enfermera=p.getEnf();
+       
+        for (Empleado i: empleado) 
+        {
+            if (i instanceof Medico) 
+            {
+                if (i.getId()==medico) 
+                {
+                    respuesta= "\n"+ i.getInformacion()+"\n";
+                    
+                }
+                
+                
+            }
+            
+            if (i instanceof Enfermera) 
+            {
+                if (i.getId()==enfermera) 
+                {
+                    respuesta+= "\n"+ i.getInformacion()+"\n";
+                    
+                }
+                
+                
+            }
+            
+        }
+        
     
+       return respuesta;
+    }
     
     
     
