@@ -659,7 +659,49 @@ public class Inicio extends javax.swing.JFrame {
         }
         System.out.println(cadena);
         
-        jButton9.requestFocus();
+        Posicion[][] Enero =new Posicion[5][7];
+        
+        for (int i = 0; i < 5; i++) //filas
+        {
+            for (int j = 0; j < 7; j++) //columnas
+            {
+                int a=1,b=2;
+                Posicion p=new Posicion(a,b); //ahi van numeros random abuelitas
+                
+                //aqui se le va a sumar uno a la cantidad de guardias tanto de doctores como
+                // de enfermeras que coicidan con los id's generados al azar.
+                for(Empleado q:empleado)
+                {
+                    //si el empleado es Medico
+                    if (q.getClass().equals("Medico")) // no se si funciona, pero es la idea nada +
+                    {
+                        if (a==q.getId()) 
+                        {
+                            q.setNumG(1);// tenemos que hacer un get de guardia y sumarle 1
+                            
+                        }
+                        
+                    }
+                    
+                    //si el empleado es enfermera
+                    if (q.getClass().equals("Enfermera")) // no se si funciona, pero es la idea nada +
+                    {
+                        if (a==q.getId()) 
+                        {
+                            q.setNumG(1);// tenemos que hacer un get de guardia y sumarle 1
+                            
+                        }
+                        
+                    }
+                  
+                }
+                Enero[i][j]=p;
+                
+            }
+            
+        }
+        
+        
         
         jButton20.setText(" ");
         jButton21.setText(" ");
