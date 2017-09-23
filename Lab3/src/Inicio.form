@@ -108,7 +108,7 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="214" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="318" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="184" max="32767" attributes="0"/>
@@ -339,7 +339,7 @@
                                   <Component id="jButton25" max="32767" attributes="0"/>
                                   <Component id="jButton32" pref="49" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="8" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jButton33" max="32767" attributes="0"/>
                                   <Component id="jButton26" max="32767" attributes="0"/>
@@ -349,7 +349,7 @@
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="jButton48" max="32767" attributes="0"/>
                                   <Component id="jButton35" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton34" alignment="1" pref="49" max="32767" attributes="0"/>
+                                  <Component id="jButton34" alignment="1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">

@@ -11,12 +11,23 @@ public class Inicio extends javax.swing.JFrame {
      * Creates new form Inicio
      */
     Posicion[][] Enero =new Posicion[5][7];
+    Posicion[][] Febrero =new Posicion[5][6];
+    Posicion[][] Marzo =new Posicion[5][7];
+    Posicion[][] Abril =new Posicion[5][6];
+    Posicion[][] Mayo =new Posicion[5][7];
+    Posicion[][] Junio =new Posicion[5][6];
+    Posicion[][] Julio =new Posicion[5][7];
+    Posicion[][] Agosto =new Posicion[5][7];
+    Posicion[][] Septiembre =new Posicion[5][6];
+    Posicion[][] Octubre =new Posicion[5][7];
+    Posicion[][] Noviembre =new Posicion[5][6];
+    Posicion[][] Diciembre =new Posicion[5][7];
+    
+    
     ArrayList<Empleado> empleado;
-    Empleado[][] ArEmpleado;
     public Inicio() {
         initComponents();
         empleado = new ArrayList<>();
-        ArEmpleado = new Empleado[1][1];
     }
 
     /**
@@ -403,8 +414,8 @@ public class Inicio extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton32, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                            .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 49, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -412,7 +423,7 @@ public class Inicio extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jButton48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton35, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton34, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE))
+                            .addComponent(jButton34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -647,7 +658,7 @@ public class Inicio extends javax.swing.JFrame {
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(26, 26, 26)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(184, Short.MAX_VALUE))
         );
 
@@ -668,47 +679,19 @@ public class Inicio extends javax.swing.JFrame {
         
         
         
-        for (int i = 0; i < 5; i++) //filas
-        {
-            for (int j = 0; j < 7; j++) //columnas
-            {
-                int a=(int) (Math.random() * 5) + 1,b=(int) (Math.random() * 5) + 1;
-                Posicion p=new Posicion(a,b); //ahi van numeros random abuelitas
-                
-                //aqui se le va a sumar uno a la cantidad de guardias tanto de doctores como
-                // de enfermeras que coicidan con los id's generados al azar.
-                for(Empleado q:empleado)
-                {
-                    //si el empleado es Medico
-                    if (q instanceof Medico) 
-                    {
-                        if (a==q.getId()) 
-                        {
-                            q.setNumG(q.getGuaridia()+1);// tenemos que hacer un get de guardia y sumarle 1
-                            
-                        }
-                        
-                    }
-                    
-                    //si el empleado es enfermera
-                    if (q instanceof Enfermera) 
-                    {
-                        if (a==q.getId()) 
-                        {
-                            q.setNumG(q.getGuaridia()+1);// tenemos que hacer un get de guardia y sumarle 1
-                            
-                        }
-                        
-                    }
-                  
-                }
-                Enero[i][j]=p;
-                
-            }
-            
-        }
-        
-        
+        Posicion pos = new Posicion();
+        Enero = pos.setPosiciones(empleado, Enero, 31);
+        Febrero = pos.setPosiciones(empleado, Febrero, 29);
+        Marzo = pos.setPosiciones(empleado, Marzo, 31);
+        Abril = pos.setPosiciones(empleado, Abril, 30);
+        Mayo = pos.setPosiciones(empleado, Mayo, 31);
+        Junio = pos.setPosiciones(empleado, Junio, 30);
+        Julio = pos.setPosiciones(empleado, Julio, 31);
+        Agosto = pos.setPosiciones(empleado, Agosto, 31);
+        Septiembre = pos.setPosiciones(empleado, Septiembre, 30);
+        Octubre = pos.setPosiciones(empleado, Octubre, 31);
+        Noviembre = pos.setPosiciones(empleado, Noviembre, 30);
+        Diciembre = pos.setPosiciones(empleado, Diciembre, 31);
         
         jButton20.setText(" ");
         jButton21.setText(" ");
