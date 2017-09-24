@@ -973,6 +973,17 @@ public class Inicio extends javax.swing.JFrame {
         Noviembre = pos.setPosiciones(empleado, Noviembre, 30);
         Diciembre = pos.setPosiciones(empleado, Diciembre, 31);
         
+        for(Empleado i: empleado)
+        {
+            i.CalcularSalario();
+            
+        }
+        
+        
+        
+        
+        
+        
         /*VER MATRIZ DEL MES
         String cadena1 = "";
         for(int x = 0; x < Enero.length; x++){
@@ -1043,6 +1054,50 @@ public class Inicio extends javax.swing.JFrame {
         jButton60.setText(" ");
         jButton61.setText(" ");
         
+        //.setEnabled(false);
+        jButton20.setEnabled(false);
+        jButton21.setEnabled(false);
+        jButton22.setEnabled(false);
+        jButton23.setEnabled(false);        
+        jButton24.setEnabled(false);
+        jButton25.setEnabled(false);
+        jButton26.setEnabled(false);
+        jButton27.setEnabled(false);
+        jButton28.setEnabled(false);
+        jButton29.setEnabled(false);
+        jButton30.setEnabled(false);
+        jButton31.setEnabled(false);
+        jButton32.setEnabled(false);
+        jButton33.setEnabled(false);
+        jButton34.setEnabled(false);
+        jButton36.setEnabled(false);
+        jButton38.setEnabled(false);
+        jButton40.setEnabled(false);
+        jButton42.setEnabled(false);
+        jButton44.setEnabled(false);
+        jButton46.setEnabled(false);
+        jButton35.setEnabled(false);
+        jButton37.setEnabled(false);
+        jButton39.setEnabled(false);
+        jButton41.setEnabled(false);
+        jButton43.setEnabled(false);
+        jButton45.setEnabled(false);
+        jButton47.setEnabled(false);
+        jButton48.setEnabled(false);
+        jButton49.setEnabled(false);
+        jButton50.setEnabled(false);
+        jButton51.setEnabled(false);
+        jButton52.setEnabled(false);
+        jButton53.setEnabled(false);
+        jButton54.setEnabled(false);
+        jButton55.setEnabled(false);
+        jButton56.setEnabled(false);
+        jButton57.setEnabled(false);
+        jButton58.setEnabled(false);
+        jButton59.setEnabled(false);
+        jButton60.setEnabled(false);
+        jButton61.setEnabled(false);
+        
         
         
         
@@ -1095,6 +1150,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Junio";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -1142,6 +1240,48 @@ public class Inicio extends javax.swing.JFrame {
         
         control="Septiembre";
         
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
@@ -1361,6 +1501,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("31");
         
         control="Octubre";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
         
     }//GEN-LAST:event_jButton10ActionPerformed
 
@@ -1804,6 +1987,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Noviembre";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
@@ -1847,6 +2073,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Diciembre";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -1890,6 +2159,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("31");
         
         control="Enero";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -1933,6 +2245,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Febrero";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -1977,6 +2332,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Marzo";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -2021,6 +2419,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Abril";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -2065,6 +2506,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Mayo";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -2109,6 +2593,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Julio";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -2153,6 +2680,49 @@ public class Inicio extends javax.swing.JFrame {
         jButton56.setText("  ");
         
         control="Agosto";
+        
+        jButton20.setEnabled(true);
+        jButton21.setEnabled(true);
+        jButton22.setEnabled(true);
+        jButton23.setEnabled(true);        
+        jButton24.setEnabled(true);
+        jButton25.setEnabled(true);
+        jButton26.setEnabled(true);
+        jButton27.setEnabled(true);
+        jButton28.setEnabled(true);
+        jButton29.setEnabled(true);
+        jButton30.setEnabled(true);
+        jButton31.setEnabled(true);
+        jButton32.setEnabled(true);
+        jButton33.setEnabled(true);
+        jButton34.setEnabled(true);
+        jButton36.setEnabled(true);
+        jButton38.setEnabled(true);
+        jButton40.setEnabled(true);
+        jButton42.setEnabled(true);
+        jButton44.setEnabled(true);
+        jButton46.setEnabled(true);
+        jButton35.setEnabled(true);
+        jButton37.setEnabled(true);
+        jButton39.setEnabled(true);
+        jButton41.setEnabled(true);
+        jButton43.setEnabled(true);
+        jButton45.setEnabled(true);
+        jButton47.setEnabled(true);
+        jButton48.setEnabled(true);
+        jButton49.setEnabled(true);
+        jButton50.setEnabled(true);
+        jButton51.setEnabled(true);
+        jButton52.setEnabled(true);
+        jButton53.setEnabled(true);
+        jButton54.setEnabled(true);
+        jButton55.setEnabled(true);
+        jButton56.setEnabled(true);
+        jButton57.setEnabled(true);
+        jButton58.setEnabled(true);
+        jButton59.setEnabled(true);
+        jButton60.setEnabled(true);
+        jButton61.setEnabled(true);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
@@ -3988,6 +4558,9 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
+        jTextArea1.setText(nul.get_Max_GuardiasE(empleado));
+        
+        
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
@@ -4010,6 +4583,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
+        jTextArea1.setText(nul.get_Total_Devengado(empleado));
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed

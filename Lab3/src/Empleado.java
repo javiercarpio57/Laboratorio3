@@ -83,6 +83,9 @@ public class Empleado
         
         return concatenar;    
     }
+    public void CalcularSalario()
+    {
+    }
     
     public double getSalario()
     {
@@ -108,14 +111,70 @@ public class Empleado
     
     // metodos propios de esta clase .....calculos
     
-    public int get_Max_GuardiasE()
+    public String get_Max_GuardiasE(ArrayList<Empleado> empleado)
     {
-        return 1 ;
+        String respuesta="";
+        int mayor=0;
+        double extra;
+        
+        for(Empleado i: empleado)
+        {
+            if (i instanceof Enfermera) 
+            {
+                if (i.getIntesivista()) 
+                {
+                    if (i.getGuaridia()>mayor) 
+                    {
+                        extra=(500*(i.getGuaridia()-4));
+                        mayor=i.getGuaridia();
+                        respuesta="La enfermera Intensivista con mas guardias es:"+i.getNombre()
+                                +"\n Y recibe extra: "+extra;
+                    
+                    
+                    }
+                    
+                }
+                
+                
+                
+            }
+        
+        }
+        
+        
+        
+        
+        
+        return respuesta;
     }
     
-    public double get_Total_Devengado()
+    public String get_Total_Devengado(ArrayList<Empleado> empleado)
     {
-        return 0.0;
+        double doc=0,enf=0;
+        String respuesta="";
+        
+        for (Empleado i: empleado) 
+        {
+            if (i instanceof Medico) 
+            {
+                doc=(i.getGuaridia()-2)*900;
+                
+            }
+            
+            if (i instanceof Enfermera) 
+            {
+                enf=(i.getGuaridia()-4)*500;
+                
+            }
+            
+            
+        }
+        
+        respuesta="El total devengado por guardias extras son: \n"
+                + "Por Medicos: "+doc+"\n"
+                +"Por Enfermeras: "+enf;
+        
+        return respuesta;
     }
     
     public void setPosiciones()

@@ -22,6 +22,11 @@ public class Medico extends Empleado{
     public String getRango() {
         return super.getRango(); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    public void CalcularSalario()
+    {        
+        salario+=(getGuaridia()-2)*900;
+    }
 
     @Override
     public double getSalario() {

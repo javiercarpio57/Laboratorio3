@@ -41,12 +41,19 @@ public class Enfermera extends Empleado
         return concatenar;
     }
     
-    public String getNombres(){
+    public void CalcularSalario()
+    {        
+        salario+=(getGuaridia()-4)*500;
+    }
+    
+    public String getNombre()
+    {
         return nombre;
     }
     
     @Override
-    public boolean getIntesivista(){
+    public boolean getIntesivista()
+    {
         boolean a = Intensiva;
             
         

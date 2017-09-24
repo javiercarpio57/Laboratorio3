@@ -497,7 +497,7 @@
                               <Component id="jButton59" min="-2" pref="46" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jButton60" min="-2" pref="46" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="8" max="32767" attributes="0"/>
                               <Component id="jButton61" min="-2" pref="46" max="-2" attributes="0"/>
                           </Group>
                       </Group>
