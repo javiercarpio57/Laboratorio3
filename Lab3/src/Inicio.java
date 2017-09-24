@@ -2,6 +2,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,16 +14,16 @@ public class Inicio extends javax.swing.JFrame {
      * Creates new form Inicio
      */
     Posicion[][] Enero =new Posicion[5][7];
-    Posicion[][] Febrero =new Posicion[5][6];
+    Posicion[][] Febrero =new Posicion[5][7];
     Posicion[][] Marzo =new Posicion[5][7];
-    Posicion[][] Abril =new Posicion[5][6];
+    Posicion[][] Abril =new Posicion[5][7];
     Posicion[][] Mayo =new Posicion[5][7];
-    Posicion[][] Junio =new Posicion[5][6];
+    Posicion[][] Junio =new Posicion[5][7];
     Posicion[][] Julio =new Posicion[5][7];
     Posicion[][] Agosto =new Posicion[5][7];
-    Posicion[][] Septiembre =new Posicion[5][6];
+    Posicion[][] Septiembre =new Posicion[5][7];
     Posicion[][] Octubre =new Posicion[5][7];
-    Posicion[][] Noviembre =new Posicion[5][6];
+    Posicion[][] Noviembre =new Posicion[5][7];
     Posicion[][] Diciembre =new Posicion[5][7];
     
     Empleado nul=new Empleado();
@@ -114,8 +115,10 @@ public class Inicio extends javax.swing.JFrame {
         jButton16 = new javax.swing.JButton();
         cmbDia1 = new javax.swing.JComboBox();
         jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
+        btnAceptar = new javax.swing.JButton();
         cmbEnfermeras1 = new javax.swing.JComboBox();
+        cmbEnfermeras2 = new javax.swing.JComboBox();
+        cmbDia2 = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -782,14 +785,28 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        jButton19.setText("Aceptar");
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        btnAceptar.setText("Aceptar");
+        btnAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                btnAceptarActionPerformed(evt);
             }
         });
 
         cmbEnfermeras1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "   ", "Juana Lopez", "Lidia Mendez", "Miriam Garcia", "Lorna Suarez", "Mariela Rodriguez" }));
+        cmbEnfermeras1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbEnfermeras1ActionPerformed(evt);
+            }
+        });
+
+        cmbEnfermeras2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "   ", "Juana Lopez", "Lidia Mendez", "Miriam Garcia", "Lorna Suarez", "Mariela Rodriguez" }));
+        cmbEnfermeras2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbEnfermeras2ActionPerformed(evt);
+            }
+        });
+
+        cmbDia2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -839,14 +856,18 @@ public class Inicio extends javax.swing.JFrame {
                                 .addGap(58, 58, 58)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(cmbDia1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(cmbEnfermeras1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(189, 189, 189)
+                                    .addComponent(cmbEnfermeras1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(cmbDia2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(cmbEnfermeras2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(54, 54, 54)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(216, 216, 216)
-                        .addComponent(jButton19)))
+                        .addComponent(btnAceptar)))
                 .addGap(47, 47, 47))
         );
         layout.setVerticalGroup(
@@ -891,11 +912,17 @@ public class Inicio extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jButton16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cmbEnfermeras1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(cmbDia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(cmbEnfermeras1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cmbDia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(cmbEnfermeras2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cmbDia2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(32, 32, 32)
-                        .addComponent(jButton19)))
+                        .addComponent(btnAceptar)))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
@@ -903,6 +930,14 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        cmbEnfermeras1.setVisible(false);
+        cmbDia1.setVisible(false);
+        cmbDia1.removeAllItems();
+        cmbEnfermeras2.setVisible(false);
+        cmbDia2.setVisible(false);
+        btnAceptar.setVisible(false);
+        cmbDia2.removeAllItems();
+        
         
         Empleado em = new Empleado();
         empleado = em.crearEmpleados(empleado);
@@ -3921,35 +3956,550 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        cmbEnfermeras1.setVisible(true);
-        cmbDia1.setVisible(true);
-
-        String en1;
-
-        cmbEnfermeras1.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                jTextArea1.setText("Hula");
-
-                if(e.equals(cmbEnfermeras1.getSelectedItem())){
-                    jTextArea1.setText("Hula");
-                }
-            }
-
-        });
-        en1 = (String) cmbEnfermeras1.getSelectedItem();
-        System.out.println(en1);
+        
+        
+        if(!"".equals(control)){
+            cmbEnfermeras1.setVisible(true);
+            cmbDia1.setVisible(true);
+            cmbEnfermeras2.setVisible(true);
+            cmbDia2.setVisible(true);
+            btnAceptar.setVisible(true);
+            
+        }else{
+            JOptionPane.showMessageDialog(this, "No ha seleccionado ningun mes.");
+        }
+        
+        
+        
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton18ActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
+        Posicion p = new Posicion();
+        
+        int a = 0;
+        try{
+            a= (int)cmbDia1.getSelectedItem();
+        }catch(Exception e){
+            a = 0;
+        }
+        int b = 0;
+        try{
+            b= (int)cmbDia2.getSelectedItem();
+        }catch(Exception e){
+            b = 0;
+        }
+        int fila1, fila2, colu1, colu2;
+        
+        if((a != 0) && (b != 0)){
+            fila1 = p.posFila(a);
+            fila2 = p.posFila(b);
+            colu1 = p.posColumna(a);
+            colu2 = p.posColumna(b);
+            
+            switch (control){
+                case "Enero":
+                    
+                    Enero = p.intercambioDia(Enero, colu1, fila1, fila2, colu2, empleado);
+                    
+                    break;
+                case "Febrero":
+                    Febrero = p.intercambioDia(Febrero, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Marzo":
+                    Marzo = p.intercambioDia(Marzo, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Abril":
+                    Abril = p.intercambioDia(Abril, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Mayo":
+                    Mayo = p.intercambioDia(Mayo, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Junio":
+                    Junio = p.intercambioDia(Junio, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Julio":
+                    Julio = p.intercambioDia(Julio, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Agosto":
+                    Agosto = p.intercambioDia(Agosto, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Septiembre":
+                    Septiembre = p.intercambioDia(Septiembre, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Octubre":
+                    Octubre = p.intercambioDia(Octubre, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Noviembre":
+                    Noviembre = p.intercambioDia(Noviembre, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "Diciembre":
+                    Diciembre = p.intercambioDia(Diciembre, colu1, fila1, fila2, colu2, empleado);
+                    break;
+                
+                case "":
+                    
+                    JOptionPane.showMessageDialog(this, "No ha seleccionado ningun mes");
+            }
+        }
+        
+        cmbEnfermeras1.setVisible(false);
+        cmbEnfermeras2.setVisible(false);
+        cmbDia1.setVisible(false);
+        cmbDia2.setVisible(false);
+        cmbDia1.removeAllItems();
+        cmbDia2.removeAllItems();
+        cmbEnfermeras1.setSelectedIndex(0);
+        cmbEnfermeras2.setSelectedIndex(0);
+        btnAceptar.setVisible(false);
+        
+        
+    }//GEN-LAST:event_btnAceptarActionPerformed
 
+    private void cmbEnfermeras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEnfermeras1ActionPerformed
+        cmbDia1.removeAllItems();
+        Posicion pa = new Posicion();
+        String en1 = (String)cmbEnfermeras1.getSelectedItem();
+        int id = 0;
+        
+                    if(en1.equals("Juana Lopez")){
+                        String nombre = "Juana Lopez";
+                        id = 1;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias1(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias1(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias1(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias1(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias1(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias1(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias1(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias1(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias1(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias1(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias1(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias1(Diciembre, nombre, id);
+                                break;
+                        }
+                    }else if(en1.equals("Lidia Mendez")){
+                        String nombre = "Lidia Mendez";
+                        id = 2;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias1(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias1(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias1(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias1(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias1(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias1(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias1(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias1(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias1(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias1(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias1(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias1(Diciembre, nombre, id);
+                                break;
+                        }
+                    }else if(en1.equals("Miriam Garcia")){
+                        String nombre = "Miriam Garcia";
+                        id = 3;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias1(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias1(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias1(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias1(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias1(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias1(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias1(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias1(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias1(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias1(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias1(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias1(Diciembre, nombre, id);
+                                break;
+                        }
+                    }else if(en1.equals("Lorna Suarez")){
+                        String nombre = "Lorna Suarez";
+                        id = 4;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias1(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias1(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias1(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias1(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias1(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias1(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias1(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias1(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias1(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias1(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias1(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias1(Diciembre, nombre, id);
+                                break;
+                        }
+                    }else if(en1.equals("Mariela Rodriguez")){
+                        String nombre = "Mariela Rodriguez";
+                        id = 5;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias1(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias1(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias1(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias1(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias1(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias1(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias1(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias1(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias1(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias1(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias1(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias1(Diciembre, nombre, id);
+                                break;
+                        }
+                    }
+    }//GEN-LAST:event_cmbEnfermeras1ActionPerformed
+
+    private void cmbEnfermeras2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEnfermeras2ActionPerformed
+        cmbDia2.removeAllItems();
+        Posicion pa = new Posicion();
+        String en1 = (String)cmbEnfermeras2.getSelectedItem();
+        int id = 0;
+        
+                    if(en1.equals("Juana Lopez")){
+                        String nombre = "Juana Lopez";
+                        id = 1;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias2(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias2(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias2(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias2(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias2(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias2(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias2(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias2(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias2(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias2(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias2(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias2(Diciembre, nombre, id);
+                                break;
+                        }
+                    }else if(en1.equals("Lidia Mendez")){
+                        String nombre = "Lidia Mendez";
+                        id = 2;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias2(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias2(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias2(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias2(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias2(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias2(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias2(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias2(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias2(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias2(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias2(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias2(Diciembre, nombre, id);
+                                break;
+                        }
+                    }else if(en1.equals("Miriam Garcia")){
+                        String nombre = "Miriam Garcia";
+                        id = 3;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias2(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias2(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias2(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias2(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias2(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias2(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias2(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias2(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias2(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias2(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias2(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias2(Diciembre, nombre, id);
+                                break;
+                        }
+                    }else if(en1.equals("Lorna Suarez")){
+                        String nombre = "Lorna Suarez";
+                        id = 4;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias2(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias2(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias2(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias2(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias2(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias2(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias2(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias2(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias2(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias2(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias2(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias2(Diciembre, nombre, id);
+                                break;
+                        }
+                    }else if(en1.equals("Mariela Rodriguez")){
+                        String nombre = "Mariela Rodriguez";
+                        id = 5;
+                        switch (control){
+                            case "Enero":
+                                pa.EstablecerDias2(Enero, nombre, id);
+                                break;
+                            case "Febrero":
+                                pa.EstablecerDias2(Febrero, nombre, id);
+                                break;
+                            case "Marzo":
+                                pa.EstablecerDias2(Marzo, nombre, id);
+                                break;
+                            case "Abril":
+                                pa.EstablecerDias2(Abril, nombre, id);
+                                break;
+                            case "Mayo":
+                                pa.EstablecerDias2(Mayo, nombre, id);
+                                break;
+                            case "Junio":
+                                pa.EstablecerDias2(Junio, nombre, id);
+                                break;
+                            case "Julio":
+                                pa.EstablecerDias2(Julio, nombre, id);
+                                break;
+                            case "Agosto":
+                                pa.EstablecerDias2(Agosto, nombre, id);
+                                break;
+                            case "Septiembre":
+                                pa.EstablecerDias2(Septiembre, nombre, id);
+                                break;
+                            case "Octubre":
+                                pa.EstablecerDias2(Octubre, nombre, id);
+                                break;
+                            case "Noviembre":
+                                pa.EstablecerDias2(Noviembre, nombre, id);
+                                break;
+                            case "Diciembre":
+                                pa.EstablecerDias2(Diciembre, nombre, id);
+                                break;
+                        }
+                    }
+        
+        
+    }//GEN-LAST:event_cmbEnfermeras2ActionPerformed
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -3986,8 +4536,11 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox cmbDia1;
-    private javax.swing.JComboBox cmbEnfermeras1;
+    private javax.swing.JButton btnAceptar;
+    public static javax.swing.JComboBox cmbDia1;
+    public static javax.swing.JComboBox cmbDia2;
+    public static javax.swing.JComboBox cmbEnfermeras1;
+    public static javax.swing.JComboBox cmbEnfermeras2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -3995,7 +4548,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;

@@ -41,4 +41,16 @@ public class Enfermera extends Empleado
         return concatenar;
     }
     
+    public String getNombres(){
+        return nombre;
+    }
+    
+    @Override
+    public boolean getIntesivista(){
+        boolean a = Intensiva;
+            
+        
+        return a;
+    }
+    
 }

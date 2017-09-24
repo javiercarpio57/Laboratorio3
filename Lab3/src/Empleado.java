@@ -28,6 +28,10 @@ public class Empleado
         NumG=NUMG;
     }
     
+    public String getNombre(){
+        return "";
+    }
+    
     public ArrayList crearEmpleados(ArrayList<Empleado> em){
         
         Empleado emp = null;
@@ -263,6 +267,9 @@ public class Empleado
        return respuesta;
     }
     
+    public boolean getIntesivista(){
+        return false;
+    }
     
     
 }
