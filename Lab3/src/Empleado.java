@@ -87,6 +87,29 @@ public class Empleado
     {
     }
     
+    public int contarParejas(int idMed, int idEnf, Posicion[][] mes){
+        int med = 0;
+        int enf = 0;
+        int conteo = 0;
+        for (int i = 0; i < mes.length; i++) {
+            for (int j = 0; j < mes[0].length; j++) {
+                try{
+                    med = mes[i][j].getDoc();
+                    enf = mes[i][j].getEnf();
+                }catch(Exception e){
+                    
+                }
+                
+                if((med == idMed) && (enf == idEnf)){
+                    conteo++;
+                }
+                
+            }
+        }
+        return conteo;
+        
+    }
+    
     public double getSalario()
     {
         return salario;    

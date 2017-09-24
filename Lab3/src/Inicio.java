@@ -762,6 +762,11 @@ public class Inicio extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Juan Perez y Lidia Mendez", "Juan Perez y Lorna Suarez", "Eduardo Gonzalez y Lidia Mendez", "Eduardo Gozalez y Lorna Suarez", "Guadalupe Torres y Lidia Mendez", "Guadalupe Torres y Lorna Suarez" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
         jButton17.setText("Enfermera con mas guardias");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
@@ -5107,6 +5112,199 @@ public class Inicio extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_cmbEnfermeras2ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        String nombres = (String)jComboBox2.getSelectedItem();
+        Empleado m = new Empleado();
+        int enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre, total;
+        if(nombres.equals("Juan Perez y Lidia Mendez")){
+            enero = m.contarParejas(1, 2, Enero);
+            febrero = m.contarParejas(1, 2, Febrero);
+            marzo = m.contarParejas(1, 2, Marzo);
+            abril = m.contarParejas(1, 2, Abril);
+            mayo = m.contarParejas(1, 2, Mayo);
+            junio = m.contarParejas(1, 2, Junio);
+            julio = m.contarParejas(1, 2, Julio);
+            agosto = m.contarParejas(1, 2, Agosto);
+            septiembre = m.contarParejas(1, 2, Septiembre);
+            octubre = m.contarParejas(1, 2, Octubre);
+            noviembre = m.contarParejas(1, 2, Noviembre);
+            diciembre = m.contarParejas(1, 2, Diciembre);
+            total = enero + febrero + marzo + abril 
+                    + mayo + junio + julio + agosto
+                    + septiembre + octubre + noviembre + diciembre;
+            jTextArea1.setText("La cantidad de veces que:\n'Juan Perez y Lidia Mendez' aparecen\n"
+                    + "juntos es de:\n"
+                    + "Enero: " + enero + "\n"
+                    + "Febrero: " + febrero + "\n"
+                    + "Marzo: " + marzo + "\n"
+                    + "Abril: " + abril + "\n"
+                    + "Mayo: " + mayo + "\n"
+                    + "Junio: " + junio + "\n"
+                    + "Julio: " + julio + "\n" 
+                    + "Agosto: " + agosto + "\n"
+                    + "Septiembre: " + septiembre + "\n"
+                    + "Octubre: " + octubre + "\n"
+                    + "Noviembre: " + noviembre + "\n"
+                    + "Diciembre: " + diciembre + "\n"
+                    + "TOTAL: " + total);
+        }else if(nombres.equals("Juan Perez y Lorna Suarez")){
+            enero = m.contarParejas(1, 4, Enero);
+            febrero = m.contarParejas(1, 4, Febrero);
+            marzo = m.contarParejas(1, 4, Marzo);
+            abril = m.contarParejas(1, 4, Abril);
+            mayo = m.contarParejas(1, 4, Mayo);
+            junio = m.contarParejas(1, 4, Junio);
+            julio = m.contarParejas(1, 4, Julio);
+            agosto = m.contarParejas(1, 4, Agosto);
+            septiembre = m.contarParejas(1, 4, Septiembre);
+            octubre = m.contarParejas(1, 4, Octubre);
+            noviembre = m.contarParejas(1, 4, Noviembre);
+            diciembre = m.contarParejas(1, 4, Diciembre);
+            total = enero + febrero + marzo + abril 
+                    + mayo + junio + julio + agosto
+                    + septiembre + octubre + noviembre + diciembre;
+            jTextArea1.setText("La cantidad de veces que:\n'Juan Perez y Lorna Suarez' aparecen\n"
+                    + "juntos es de:\n"
+                    + "Enero: " + enero + "\n"
+                    + "Febrero: " + febrero + "\n"
+                    + "Marzo: " + marzo + "\n"
+                    + "Abril: " + abril + "\n"
+                    + "Mayo: " + mayo + "\n"
+                    + "Junio: " + junio + "\n"
+                    + "Julio: " + julio + "\n" 
+                    + "Agosto: " + agosto + "\n"
+                    + "Septiembre: " + septiembre + "\n"
+                    + "Octubre: " + octubre + "\n"
+                    + "Noviembre: " + noviembre + "\n"
+                    + "Diciembre: " + diciembre + "\n"
+                    + "TOTAL: " + total);
+        }else if(nombres.equals("Eduardo Gonzalez y Lidia Mendez")){
+            enero = m.contarParejas(3, 2, Enero);
+            febrero = m.contarParejas(3, 2, Febrero);
+            marzo = m.contarParejas(3, 2, Marzo);
+            abril = m.contarParejas(3, 2, Abril);
+            mayo = m.contarParejas(3, 2, Mayo);
+            junio = m.contarParejas(3, 2, Junio);
+            julio = m.contarParejas(3, 2, Julio);
+            agosto = m.contarParejas(3, 2, Agosto);
+            septiembre = m.contarParejas(3, 2, Septiembre);
+            octubre = m.contarParejas(3, 2, Octubre);
+            noviembre = m.contarParejas(3, 2, Noviembre);
+            diciembre = m.contarParejas(3, 2, Diciembre);
+            total = enero + febrero + marzo + abril 
+                    + mayo + junio + julio + agosto
+                    + septiembre + octubre + noviembre + diciembre;
+            jTextArea1.setText("La cantidad de veces que:\n'Eduardo Gonzalez y Lidia Mendez' aparecen\n"
+                    + "juntos es de:\n"
+                    + "Enero: " + enero + "\n"
+                    + "Febrero: " + febrero + "\n"
+                    + "Marzo: " + marzo + "\n"
+                    + "Abril: " + abril + "\n"
+                    + "Mayo: " + mayo + "\n"
+                    + "Junio: " + junio + "\n"
+                    + "Julio: " + julio + "\n" 
+                    + "Agosto: " + agosto + "\n"
+                    + "Septiembre: " + septiembre + "\n"
+                    + "Octubre: " + octubre + "\n"
+                    + "Noviembre: " + noviembre + "\n"
+                    + "Diciembre: " + diciembre + "\n"
+                    + "TOTAL: " + total);
+        }else if(nombres.equals("Eduardo Gozalez y Lorna Suarez")){
+            enero = m.contarParejas(3, 4, Enero);
+            febrero = m.contarParejas(3, 4, Febrero);
+            marzo = m.contarParejas(3, 4, Marzo);
+            abril = m.contarParejas(3, 4, Abril);
+            mayo = m.contarParejas(3, 4, Mayo);
+            junio = m.contarParejas(3, 4, Junio);
+            julio = m.contarParejas(3, 4, Julio);
+            agosto = m.contarParejas(3, 4, Agosto);
+            septiembre = m.contarParejas(3, 4, Septiembre);
+            octubre = m.contarParejas(3, 4, Octubre);
+            noviembre = m.contarParejas(3, 4, Noviembre);
+            diciembre = m.contarParejas(3, 4, Diciembre);
+            total = enero + febrero + marzo + abril 
+                    + mayo + junio + julio + agosto
+                    + septiembre + octubre + noviembre + diciembre;
+            jTextArea1.setText("La cantidad de veces que:\n'Eduardo Gozalez y Lorna Suarez' aparecen\n"
+                    + "juntos es de:\n"
+                    + "Enero: " + enero + "\n"
+                    + "Febrero: " + febrero + "\n"
+                    + "Marzo: " + marzo + "\n"
+                    + "Abril: " + abril + "\n"
+                    + "Mayo: " + mayo + "\n"
+                    + "Junio: " + junio + "\n"
+                    + "Julio: " + julio + "\n" 
+                    + "Agosto: " + agosto + "\n"
+                    + "Septiembre: " + septiembre + "\n"
+                    + "Octubre: " + octubre + "\n"
+                    + "Noviembre: " + noviembre + "\n"
+                    + "Diciembre: " + diciembre + "\n"
+                    + "TOTAL: " + total);
+        }else if(nombres.equals("Guadalupe Torres y Lidia Mendez")){
+            enero = m.contarParejas(4, 2, Enero);
+            febrero = m.contarParejas(4, 2, Febrero);
+            marzo = m.contarParejas(4, 2, Marzo);
+            abril = m.contarParejas(4, 2, Abril);
+            mayo = m.contarParejas(4, 2, Mayo);
+            junio = m.contarParejas(4, 2, Junio);
+            julio = m.contarParejas(4, 2, Julio);
+            agosto = m.contarParejas(4, 2, Agosto);
+            septiembre = m.contarParejas(4, 2, Septiembre);
+            octubre = m.contarParejas(4, 2, Octubre);
+            noviembre = m.contarParejas(4, 2, Noviembre);
+            diciembre = m.contarParejas(4, 2, Diciembre);
+            total = enero + febrero + marzo + abril 
+                    + mayo + junio + julio + agosto
+                    + septiembre + octubre + noviembre + diciembre;
+            jTextArea1.setText("La cantidad de veces que:\n'Guadalupe Torres y Lidia Mendez' aparecen\n"
+                    + "juntos es de:\n"
+                    + "Enero: " + enero + "\n"
+                    + "Febrero: " + febrero + "\n"
+                    + "Marzo: " + marzo + "\n"
+                    + "Abril: " + abril + "\n"
+                    + "Mayo: " + mayo + "\n"
+                    + "Junio: " + junio + "\n"
+                    + "Julio: " + julio + "\n" 
+                    + "Agosto: " + agosto + "\n"
+                    + "Septiembre: " + septiembre + "\n"
+                    + "Octubre: " + octubre + "\n"
+                    + "Noviembre: " + noviembre + "\n"
+                    + "Diciembre: " + diciembre + "\n"
+                    + "TOTAL: " + total);
+        }else if(nombres.equals("Guadalupe Torres y Lorna Suarez")){
+            enero = m.contarParejas(4, 4, Enero);
+            febrero = m.contarParejas(4, 4, Febrero);
+            marzo = m.contarParejas(4, 4, Marzo);
+            abril = m.contarParejas(4, 4, Abril);
+            mayo = m.contarParejas(4, 4, Mayo);
+            junio = m.contarParejas(4, 4, Junio);
+            julio = m.contarParejas(4, 4, Julio);
+            agosto = m.contarParejas(4, 4, Agosto);
+            septiembre = m.contarParejas(4, 4, Septiembre);
+            octubre = m.contarParejas(4, 4, Octubre);
+            noviembre = m.contarParejas(4, 4, Noviembre);
+            diciembre = m.contarParejas(4, 4, Diciembre);
+            total = enero + febrero + marzo + abril 
+                    + mayo + junio + julio + agosto
+                    + septiembre + octubre + noviembre + diciembre;
+            jTextArea1.setText("La cantidad de veces que:\n'Guadalupe Torres y Lorna Suarez' aparecen\n"
+                    + "juntos es de:\n"
+                    + "Enero: " + enero + "\n"
+                    + "Febrero: " + febrero + "\n"
+                    + "Marzo: " + marzo + "\n"
+                    + "Abril: " + abril + "\n"
+                    + "Mayo: " + mayo + "\n"
+                    + "Junio: " + junio + "\n"
+                    + "Julio: " + julio + "\n" 
+                    + "Agosto: " + agosto + "\n"
+                    + "Septiembre: " + septiembre + "\n"
+                    + "Octubre: " + octubre + "\n"
+                    + "Noviembre: " + noviembre + "\n"
+                    + "Diciembre: " + diciembre + "\n"
+                    + "TOTAL: " + total);
+        }
+    }//GEN-LAST:event_jComboBox2ActionPerformed
     
     
     /**
