@@ -955,12 +955,7 @@ public class Inicio extends javax.swing.JFrame {
         Empleado em = new Empleado();
         empleado = em.crearEmpleados(empleado);
         
-        String cadena = "";
-        for(Empleado a: empleado)
-        {
-            cadena += a.getInformacion() + "\n----------------------------\n";
-        }
-        System.out.println(cadena);
+        
         
         
         
@@ -977,6 +972,33 @@ public class Inicio extends javax.swing.JFrame {
         Octubre = pos.setPosiciones(empleado, Octubre, 31);
         Noviembre = pos.setPosiciones(empleado, Noviembre, 30);
         Diciembre = pos.setPosiciones(empleado, Diciembre, 31);
+        
+        /*VER MATRIZ DEL MES
+        String cadena1 = "";
+        for(int x = 0; x < Enero.length; x++){
+            for(int y = 0; y < Enero[0].length; y++){
+                int abc = (int)Enero[x][y].getDoc();
+                for(Empleado z: empleado){
+                    if(z.getId() == abc){
+                        cadena1 += z.getGuaridia() + "\t";
+                    }
+                }
+                
+            }
+            cadena1 += "\n";
+        }
+        if(cadena1.equals("")){
+            cadena1 = "No hay ninguna matriz para mostrar.";
+        }
+        System.out.println(cadena);*/
+        
+        String cadena = "";
+        for(Empleado a: empleado)
+        {
+            cadena += a.getInformacion() + "\n----------------------------\n";
+        }
+        System.out.println(cadena);
+        
         
         jButton20.setText(" ");
         jButton21.setText(" ");

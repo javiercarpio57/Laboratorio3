@@ -61,7 +61,7 @@ public class Empleado
         emp = new Enfermera("9876456-8", "6547854370101", "Miriam Garcia", 8000, 3, 0, false, 14);
         em.add(emp);
         
-        emp = new Enfermera("4567865'8", "569374160101", "Lorna Suarez", 10000, 4, 0, true, 12);
+        emp = new Enfermera("4567865-8", "569374160101", "Lorna Suarez", 10000, 4, 0, true, 12);
         em.add(emp);
         
         emp = new Enfermera("6789654-8", "3254786540101", "Mariela Rodriguez", 8000, 5, 0, false, 2);
@@ -98,7 +98,7 @@ public class Empleado
         return id;
     }
     public void setNumG(int numG){
-        NumG += numG;;
+        NumG = numG;;
     }
     
     public int getGuaridia()

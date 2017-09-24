@@ -60,7 +60,8 @@ public class Posicion
                     {
                         if (a==q.getId()) 
                         {
-                            q.setNumG(q.getGuaridia()+1);// tenemos que hacer un get de guardia y sumarle 1
+                            int xx = q.getGuaridia();
+                            q.setNumG(xx+1);// tenemos que hacer un get de guardia y sumarle 1
                             
                         }
                         
