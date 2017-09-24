@@ -7,32 +7,60 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author jose
+ * @author Javier Carpio
+ * @author Jose Cifuentes
+ * @version 24.09.2017
+ * 
  */
+
+
 public class Posicion 
 {
     private int doc;
     private int enf;
     
+    /**
+     * Constructor que permite crear un objeto que conecte con esta clase.
+     */
     public Posicion(){
         
     }
     
+    /**
+     * constructor
+     * @param D variable que corresponde a la posicion del medico
+     * @param E variable que corresponde a la posicion de la enfermera
+     */
     public Posicion(int D,int E)
     {
         doc=D;
         enf=E;    
     }
     
+    /**
+     * metodo que nos permite saber cual es la posicion del medico
+     * @return doc
+     */
     public int getDoc()
     {
         return doc;
     }
+    
+    /**
+     * metodo que nos permite saber cual es la posicion de la enfermera
+     * @return enf
+     */
     public int getEnf()
     {
         return enf;
     }
-    
+    /**
+     * este metodo crea las guardias al azar para cada mes
+     * @param empleado es la coleccion de todos los trabajadores
+     * @param Mes es una matriz de un mes en especifico
+     * @param dias se espesifica cuantos meses tiene el mes
+     * @return mes (matriz)
+     */
     public Posicion[][] setPosiciones(ArrayList<Empleado> empleado, Posicion[][] Mes, int dias){
         
         Posicion[][] mes = Mes.clone();
@@ -103,6 +131,11 @@ public class Posicion
         
     }
     
+    /**
+     * metodo que devuelve en que columna esta un dia en espesifico 
+     * @param dia variable del día que se quiere saber la posicion respecto a columnas
+     * @return fila
+     */
     public int posColumna(int dia){
         String respuesta = "";
         int columna, fila = 0;
@@ -211,6 +244,12 @@ public class Posicion
         
         
     }
+    
+    /**
+     * metodo que devuelve en que fila esta un dia en espesifico 
+     * @param dia variable del día que se quiere saber la posicion respecto a filas
+     * @return fila
+     */
     public int posFila(int dia){
         String respuesta = "";
         int columna = 0, fila = 0;
@@ -319,6 +358,16 @@ public class Posicion
         
     }
     
+    /**
+     *  se efectua el cambio de guardia
+     * @param mes se especifica en que mes se va a hacer el intercambio 
+     * @param c1 es la columna de la persona que se quiere hacer el cambio
+     * @param f1 es la fila de la persona que se quiere hacer el cambio
+     * @param f2 es la fila a la que se quiere pasar la persona
+     * @param c2 es la columna que se quiere pasar la persona
+     * @param em es la coleccion de empleados
+     * @return mes matriz de posiciones
+     */
     public Posicion[][] intercambioDia(Posicion[][] mes, int c1, int f1, int f2, int c2, ArrayList<Empleado> em){
         Posicion dato1 = mes[f1][c1];
         Posicion dato2 = mes[f2][c2];
@@ -358,6 +407,12 @@ public class Posicion
         
     }
     
+    /**
+     * Llena los combobox para seleccionar que dia se puede cambiar una guardia
+     * @param mes se especifica el mes
+     * @param nombre seespecifica el nombre del empleado
+     * @param id  se especifica el id del empleado
+     */
     public void EstablecerDias1(Posicion[][] mes, String nombre, int id){
         
         int cont = 0;
@@ -381,6 +436,12 @@ public class Posicion
                 
     }
     
+    /**
+     * Llena los combobox para seleccionar que dia se puede cambiar una guardia
+     * @param mes se especifica el mes
+     * @param nombre seespecifica el nombre del empleado
+     * @param id  se especifica el id del empleado
+     */
     public void EstablecerDias2(Posicion[][] mes, String nombre, int id){
         final Posicion[][] a = mes.clone();
         final String n = nombre;
