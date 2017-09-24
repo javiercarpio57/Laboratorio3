@@ -5,12 +5,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author jose
@@ -346,9 +340,6 @@ public class Posicion
                 }
             }
         }
-        
-        System.out.println(int1);
-        System.out.println(int2);
         
         if(int1 == int2){
             Posicion a1 = new Posicion(med1, enf2);

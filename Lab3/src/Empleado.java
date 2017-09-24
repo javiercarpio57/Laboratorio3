@@ -83,9 +83,6 @@ public class Empleado
         
         return concatenar;    
     }
-    public void CalcularSalario()
-    {
-    }
     
     public int contarParejas(int idMed, int idEnf, Posicion[][] mes){
         int med = 0;
@@ -131,7 +128,9 @@ public class Empleado
     {
         return NumG;
     }
-    
+    public void CalcularSalario(){
+        
+    }
     // metodos propios de esta clase .....calculos
     
     public String get_Max_GuardiasE(ArrayList<Empleado> empleado)
