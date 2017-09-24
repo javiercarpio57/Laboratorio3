@@ -6,13 +6,12 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author javie
+ * @author Javier Carpio
+ * @author Jose Cifuentes
+ * @version 24.09.2017
+ * 
  */
 public class Inicio extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Inicio
-     */
     private Posicion[][] Enero =new Posicion[5][7];
     private Posicion[][] Febrero =new Posicion[5][7];
     private Posicion[][] Marzo =new Posicion[5][7];
@@ -25,12 +24,10 @@ public class Inicio extends javax.swing.JFrame {
     private Posicion[][] Octubre =new Posicion[5][7];
     private Posicion[][] Noviembre =new Posicion[5][7];
     private Posicion[][] Diciembre =new Posicion[5][7];
-    
     Empleado nul=new Empleado();
-    
     String control="";
+    private ArrayList<Empleado> empleado;
     
-    ArrayList<Empleado> empleado;
     public Inicio() {
         initComponents();
         empleado = new ArrayList<>();
@@ -959,10 +956,6 @@ public class Inicio extends javax.swing.JFrame {
         
         Empleado em = new Empleado();
         empleado = em.crearEmpleados(empleado);
-        
-        
-        
-        
         
         Posicion pos = new Posicion();
         Enero = pos.setPosiciones(empleado, Enero, 31);

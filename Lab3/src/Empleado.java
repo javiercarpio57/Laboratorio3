@@ -3,7 +3,9 @@ import java.util.ArrayList;
 
 /**
  *
- * @author jose
+ * @author Jose Cifuentes
+ * @author Javier Carpio
+ * @version 24.09.2017
  */
 public class Empleado 
 {
@@ -14,10 +16,22 @@ public class Empleado
     protected int id;
     protected int NumG;
     
+    /**
+     * Constructor que permite crear un objeto que conecte con esta clase.
+     */
     public Empleado(){
         
     }
     
+    /**
+     * Constructor que crea el objeto de tipo empleado, con sus datos.
+     * @param Nit String que contiene el numero de nit del empleado.
+     * @param dpi String que contiene el numero de DPI del empleado.
+     * @param Nom String que contiene el nombre del empleado.
+     * @param Salario double que contiene el salario que gana el empleado.
+     * @param ID int que  contiene el codigo de identificacion del empleado.
+     * @param NUMG int que contiene el numero de guardias que realiza el empleado en el ano.
+     */
     public Empleado(String Nit, String dpi, String Nom, double Salario, int ID, int NUMG)
     {
         nit=Nit;
@@ -28,10 +42,19 @@ public class Empleado
         NumG=NUMG;
     }
     
+    /**
+     * Metodo que nos permite conocer el nombre del empleado.
+     * @return ""
+     */
     public String getNombre(){
         return "";
     }
     
+    /**
+     * Metodo que establece los datos del empleado contratado.
+     * @param em ArrayList que contiene todos los datos de los empleados contratados.
+     * @return emp
+     */
     public ArrayList crearEmpleados(ArrayList<Empleado> em){
         
         Empleado emp = null;
@@ -70,6 +93,10 @@ public class Empleado
         return em;
     }
     
+    /**
+     * Metodo que permite conocer todos los datos del empleado.
+     * @return concatenar
+     */
     public String getInformacion()
     {
         String concatenar="";
@@ -79,11 +106,16 @@ public class Empleado
                 +"Salario: "+salario+"\n"
                 +"Numero de Guardias: "+NumG;
         
-        
-        
         return concatenar;    
     }
     
+    /**
+     * Metodo que permite contar cuantas veces hay un medico especialista y una enfermera intensivista trabajando el mismo dia.
+     * @param idMed int que contiene el codigo de identificacion del medico.
+     * @param idEnf int que contiene el codigo de identificacion de la enfermera.
+     * @param mes Array 2D que contiene las parejas de trabajadores en el mes.
+     * @return conteo
+     */
     public int contarParejas(int idMed, int idEnf, Posicion[][] mes){
         int med = 0;
         int enf = 0;
@@ -107,32 +139,63 @@ public class Empleado
         
     }
     
+    /**
+     * Metodo que permite conocer el salario del empleado.
+     * @return salario
+     */
     public double getSalario()
     {
         return salario;    
     }
     
+    /**
+     * Metodo que permite conocer el rango de la persona
+     * @return ""
+     */
     public String getRango()
     {
         return"";    
     }
+    
+    /**
+     * Metodo que permite conocer el codigo de identificacion del empleado.
+     * @return id
+     */
     public int getId()
     {
         return id;
     }
+    
+    /**
+     * Metodo que permite agregar mas guardias.
+     * @param numG 
+     */
     public void setNumG(int numG){
         NumG = numG;;
     }
     
+    /**
+     * Metodo que permite conocer la cantidad de guardias del empleado.
+     * @return NumG
+     */
     public int getGuaridia()
     {
         return NumG;
     }
+    
+    /**
+     * Metodo que permite calcular el salario devengado.
+     */
     public void CalcularSalario(){
         
     }
     // metodos propios de esta clase .....calculos
     
+    /**
+     * Metodo que permite conocer el empleado con mayor numero de guardias.
+     * @param empleado ArrayList que contiene a todos los empleados.
+     * @return respuesta
+     */
     public String get_Max_GuardiasE(ArrayList<Empleado> empleado)
     {
         String respuesta="";
@@ -151,25 +214,17 @@ public class Empleado
                         mayor=i.getGuaridia();
                         respuesta="La enfermera Intensivista con mas guardias es:"+i.getNombre()
                                 +"\n Y recibe extra: "+extra;
-                    
-                    
                     }
-                    
                 }
-                
-                
-                
             }
-        
         }
-        
-        
-        
-        
-        
         return respuesta;
     }
-    
+     /**
+      * Metodo que permite conocer el total devengado por la clinica.
+      * @param empleado ArrayList que contiene a todos los empleados.
+      * @return respuesta
+      */
     public String get_Total_Devengado(ArrayList<Empleado> empleado)
     {
         double doc=0,enf=0;
@@ -199,11 +254,13 @@ public class Empleado
         return respuesta;
     }
     
-    public void setPosiciones()
-    {
-        
-    }
-    
+    /**
+     * Metodo que permite mostrar que empleados estan trabajando en un dia en especifico.
+     * @param Dia int que contiene el dia del mes.
+     * @param pos Array 2D que contiene las parejas de trabajadores por dia.
+     * @param empleado ArrayList que contiene a todos los empleados.
+     * @return respuesta
+     */
     public String TurnoDeDia(int Dia,Posicion[][] pos,ArrayList<Empleado> empleado)
     {
        String respuesta="";
@@ -348,6 +405,10 @@ public class Empleado
        return respuesta;
     }
     
+    /**
+     * Metodo que permite conocer si un empleado es enfermera e intensivista.
+     * @return 
+     */
     public boolean getIntesivista(){
         return false;
     }
