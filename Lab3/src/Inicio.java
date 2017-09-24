@@ -13,18 +13,18 @@ public class Inicio extends javax.swing.JFrame {
     /**
      * Creates new form Inicio
      */
-    Posicion[][] Enero =new Posicion[5][7];
-    Posicion[][] Febrero =new Posicion[5][7];
-    Posicion[][] Marzo =new Posicion[5][7];
-    Posicion[][] Abril =new Posicion[5][7];
-    Posicion[][] Mayo =new Posicion[5][7];
-    Posicion[][] Junio =new Posicion[5][7];
-    Posicion[][] Julio =new Posicion[5][7];
-    Posicion[][] Agosto =new Posicion[5][7];
-    Posicion[][] Septiembre =new Posicion[5][7];
-    Posicion[][] Octubre =new Posicion[5][7];
-    Posicion[][] Noviembre =new Posicion[5][7];
-    Posicion[][] Diciembre =new Posicion[5][7];
+    private Posicion[][] Enero =new Posicion[5][7];
+    private Posicion[][] Febrero =new Posicion[5][7];
+    private Posicion[][] Marzo =new Posicion[5][7];
+    private Posicion[][] Abril =new Posicion[5][7];
+    private Posicion[][] Mayo =new Posicion[5][7];
+    private Posicion[][] Junio =new Posicion[5][7];
+    private Posicion[][] Julio =new Posicion[5][7];
+    private Posicion[][] Agosto =new Posicion[5][7];
+    private Posicion[][] Septiembre =new Posicion[5][7];
+    private Posicion[][] Octubre =new Posicion[5][7];
+    private Posicion[][] Noviembre =new Posicion[5][7];
+    private Posicion[][] Diciembre =new Posicion[5][7];
     
     Empleado nul=new Empleado();
     
