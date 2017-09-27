@@ -80,7 +80,7 @@ public class Enfermera extends Empleado
     @Override
     /**
      * devuelve si es intensivista o no
-     * return a 
+     * @return a 
      */
     public boolean getIntesivista()
     {
